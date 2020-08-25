@@ -31,10 +31,11 @@ export function Icon(props: IconProps) {
       viewBox="0 0 1024 1024"
       width="20px"
       height="20px"
+      data-testid="icon-path"
       block={block}
       {...props}
     >
-      <Path d={icons[icon]} color={color} />
+      <Path d={icons[icon]} color={color} icon-path />
     </Svg>
   );
 }

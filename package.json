@@ -15,6 +15,7 @@
   "main": "dist/yh-ui.js",
   "module": "dist/yh-ui.modern.js",
   "dependencies": {
+    "axios": "^0.20.0",
     "coveralls": "^3.1.0",
     "polished": "^3.6.5",
     "react": "^16.13.1",
@@ -30,8 +31,9 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build-cjs": "microbundle build --tsconfig tsconfig.build.json --jsx React.createElement  --compress=false --format cjs", "build-all": "microbundle build --tsconfig tsconfig.build.json --jsx React.createElement  --compress=false",
-    "build": "npm run build-all & npm run build-cjs", 
+    "build-cjs": "microbundle build --tsconfig tsconfig.build.json --jsx React.createElement  --compress=false --format cjs",
+    "build-all": "microbundle build --tsconfig tsconfig.build.json --jsx React.createElement  --compress=false",
+    "build": "npm run build-all & npm run build-cjs",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "storybook": "start-storybook -p 6006 -s public",

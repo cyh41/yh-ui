@@ -8,3 +8,23 @@ export const glow = keyframes`
   50% { opacity: .4; }
 `;
 
+export const progressFlash = keyframes`
+  0% { opacity: 0.1;
+    width: 0; 
+  }
+  20% { opacity: 0.5;
+    width: 0; 
+  } 
+  100% { opacity: 0;
+    width: 100%; 
+  }
+`;
+
+export const iconSpin = keyframes`
+  0% {
+     transform: rotate(0deg);
+  }
+  100% {
+     transform: rotate(360deg);
+  }
+`;
